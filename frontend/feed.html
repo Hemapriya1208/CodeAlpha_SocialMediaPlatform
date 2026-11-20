@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pulse – Home</title><link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="feed">
+  <header id="nav"></header>
+  <div class="layout">
+    <main class="main">
+      <form class="composer" id="composer">
+        <div id="meAvatar"></div>
+        <div style="flex:1">
+          <textarea id="postText" rows="2" maxlength="280" placeholder="What's on your mind?"></textarea>
+          <div class="composer-foot">
+            <span class="muted" id="count">280</span>
+            <button class="btn sm" id="postBtn" disabled>Post</button>
+          </div>
+        </div>
+      </form>
+      <div class="tabs">
+        <button class="on" data-scope="following">Following</button>
+        <button data-scope="all">Explore</button>
+      </div>
+      <div id="feed"></div>
+    </main>
+    <aside class="side">
+      <div class="panel">
+        <h3>Find people</h3>
+        <input id="search" placeholder="Search by name or username" aria-label="Search users">
+        <div id="results"></div>
+      </div>
+      <div class="panel"><h3>Who to follow</h3><div id="suggest"></div></div>
+    </aside>
+  </div>
+  <script src="/script.js"></script>
+</body>
+</html>

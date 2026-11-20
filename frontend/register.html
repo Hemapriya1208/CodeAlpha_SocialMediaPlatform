@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pulse – Sign up</title><link rel="stylesheet" href="/style.css">
+</head>
+<body data-page="register">
+  <main class="auth">
+    <section class="auth-hero">
+      <span class="logo" style="color:#fff">Pulse</span>
+      <div><h1>Your feed.<br>Your <i>people.</i></h1></div>
+      <p>Create a profile in under a minute.</p>
+      <div class="ring"></div>
+    </section>
+    <section class="auth-form">
+      <form id="authForm">
+        <h2>Create your account</h2>
+        <input name="display_name" placeholder="Display name" maxlength="40" required>
+        <input name="username" placeholder="Username" pattern="[a-zA-Z0-9_]{3,20}" title="3-20 letters, numbers or underscores" required>
+        <input name="email" type="email" placeholder="Email" required>
+        <input name="password" type="password" placeholder="Password (6+ characters)" minlength="6" autocomplete="new-password" required>
+        <p class="err" id="err"></p>
+        <button class="btn">Sign up</button>
+        <small class="muted">Already have an account? <a href="/index.html">Log in</a></small>
+      </form>
+    </section>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
